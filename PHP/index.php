@@ -10,15 +10,16 @@
   <script>
     function validate()
 {
-    var error="";
+    var errorEmail="";
+    var errorPass="";
 
 
     var email = document.getElementById( "inputEmail" );
     if( email.value == "" || email.value.indexOf( "@" ) == -1 )
     {
       
-      error = "Vous devez saisir un email valide";
-      document.getElementById( "error_email" ).innerHTML = error;
+      errorEmail = "Vous devez saisir un email valide";
+      document.getElementById( "error_email" ).innerHTML = errorEmail;
       return false;
     }
 
@@ -26,8 +27,8 @@
     if( password.value == "" || password.value < 6 )
     {
      
-      error = "Mot de passe incorrect!";
-      document.getElementById( "error_pass" ).innerHTML = error;
+      errorPass = "Mot de passe incorrect!";
+      document.getElementById( "error_pass" ).innerHTML = errorPass;
       return false;
     }
 
