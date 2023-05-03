@@ -7,9 +7,11 @@
 		<title>Login</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	
+    <!-- le script javascript pour valider côté front le formulaire; à mettre plutôt dans un fichier js ; ici, la fonction est appelée avec un "onSubmit() sur le form"-->
   <script>
     function validate()
 {
+  //ce sont ces deux variables qui vont stocker les messages d'erreur pour l'email et le mot de passe 
     var errorEmail="";
     var errorPass="";
 
