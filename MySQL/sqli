@@ -1,0 +1,3 @@
+"SELECT id, libelle, prix FROM plat where libelle LIKE '%' OR libelle LIKE '%'"
+
+delete from plat where libelle LIKE '%' OR libelle LIKE '%';
