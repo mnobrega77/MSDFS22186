@@ -20,7 +20,7 @@ $this->description = $description;
         return $this->nom;
     }
 public function afficher() {
-echo $this->id . " " . $this->nom . " : " . $this->description;
+echo $this->id . " " . $this->nom . " : " . $this->description . "\n";
 }
 
 
